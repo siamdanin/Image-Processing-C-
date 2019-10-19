@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E26B66BD-DC12-45D7-AFD2-C4FE5980380A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project_Akhir_Computer_Vision</RootNamespace>
+    <AssemblyName>Project Akhir Computer Vision</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Emgu.CV">
+      <HintPath>D:\College\Materi Semester\SEMESTER 4\COMPUTER VISION\lib\Add references\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.GPU">
+      <HintPath>D:\College\Materi Semester\SEMESTER 4\COMPUTER VISION\lib\Add references\Emgu.CV.GPU.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.ML">
+      <HintPath>D:\College\Materi Semester\SEMESTER 4\COMPUTER VISION\lib\Add references\Emgu.CV.ML.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.OCR">
+      <HintPath>D:\College\Materi Semester\SEMESTER 4\COMPUTER VISION\lib\Add references\Emgu.CV.OCR.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>D:\College\Materi Semester\SEMESTER 4\COMPUTER VISION\lib\Add references\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util">
+      <HintPath>D:\College\Materi Semester\SEMESTER 4\COMPUTER VISION\lib\Add references\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AreaBased.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreaBased.Designer.cs">
+      <DependentUpon>AreaBased.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseRecogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseRecogForm.Designer.cs">
+      <DependentUpon>ChooseRecogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EdgeDetection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdgeDetection.Designer.cs">
+      <DependentUpon>EdgeDetection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageRecogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageRecogForm.Designer.cs">
+      <DependentUpon>ImageRecogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PointBased.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PointBased.Designer.cs">
+      <DependentUpon>PointBased.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RealTimeRecogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RealTimeRecogForm.Designer.cs">
+      <DependentUpon>RealTimeRecogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShapeDetection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShapeDetection.Designer.cs">
+      <DependentUpon>ShapeDetection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoRecogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoRecogForm.Designer.cs">
+      <DependentUpon>VideoRecogForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AreaBased.resx">
+      <DependentUpon>AreaBased.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseRecogForm.resx">
+      <DependentUpon>ChooseRecogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EdgeDetection.resx">
+      <DependentUpon>EdgeDetection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageRecogForm.resx">
+      <DependentUpon>ImageRecogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PointBased.resx">
+      <DependentUpon>PointBased.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RealTimeRecogForm.resx">
+      <DependentUpon>RealTimeRecogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeDetection.resx">
+      <DependentUpon>ShapeDetection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoRecogForm.resx">
+      <DependentUpon>VideoRecogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-movies-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9cca50039cb2377b0ec0a8b5a7f8f6a9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building_lsd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camuniversal-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detect-simple-shapes-dst-img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face_detection.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\missing-webcam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KIC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smoothing_tutorial_result_median_filter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\threshold_tutorial_theory_example.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noimageavailable.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cudart32_40_17.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="cufft32_40_17.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="cvextern.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="cvextern_gpu.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="haarcascade_frontalface_alt.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="haarcascade_mcs_mouth.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="haarcascade_mcs_nose.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="haarcascade_mcs_upperbody.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="haarcascade_upperbody.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="npp32_40_17.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_calib3d231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_contrib231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_core231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_features2d231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_ffmpeg.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_flann231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_gpu231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_highgui231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_imgproc231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_legacy231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_ml231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_objdetect231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_video231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZedGraph.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
